@@ -704,15 +704,15 @@ bool cRadioReceiver::LoadChannelData(bool initial)
         continue;
 
       /* channel name */
-      if (!XMLUtils::GetString(pChannelNode, "name", strTmp))
+      /*if (!XMLUtils::GetString(pChannelNode, "name", strTmp))
         channel.strChannelName = "";
-      else
+      else */
         channel.strChannelName = strTmp;
 
       /* icon path */
-      if (!XMLUtils::GetString(pChannelNode, "icon", strTmp))
+      /*if (!XMLUtils::GetString(pChannelNode, "icon", strTmp))
         channel.strIconPath = m_strDefaultIcon;
-      else
+      else */
         channel.strIconPath = strTmp;
 
       m_channels.push_back(channel);
